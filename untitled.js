@@ -12,6 +12,30 @@
 jQuery.noConflict();
 (function($) {
     $('html').attr('class', '');
+    
+    let $btn = $(`<a style="
+    position: absolute;
+    left: 0;
+    top: 180px;
+    z-index: 9999;
+    padding: 10px;
+    background: #66ccff;
+    border-radius: 15px;
+    text-align: center;
+" href="https://www.bilibili.com/ranking/">排行榜</button>`);
+
+    let $btn2 = $(`<a style="
+    position: absolute;
+    left: 0;
+    top: 230px;
+    z-index: 9999;
+    padding: 10px;
+    background: #66ccff;
+    border-radius: 15px;
+    text-align: center;
+" href="https://www.bilibili.com/video/online.html">当前在线</button>`);
+
+    $('html').append($btn).append($btn2);
 })(jQuery);
 
 /*
